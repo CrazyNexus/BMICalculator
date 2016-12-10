@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICalculator", "BMICalculator\BMICalculator.csproj", "{D16097EE-652B-4573-80D1-4A59DEA9F170}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICalculator.iOS", "BMICalculator\BMICalculator.iOS.csproj", "{D16097EE-652B-4573-80D1-4A59DEA9F170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICalculator.Droid", "BMICalculator.Droid\BMICalculator.Droid.csproj", "{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +21,13 @@ Global
 		{D16097EE-652B-4573-80D1-4A59DEA9F170}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{D16097EE-652B-4573-80D1-4A59DEA9F170}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{D16097EE-652B-4573-80D1-4A59DEA9F170}.Debug|iPhone.Build.0 = Debug|iPhone
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Release|iPhone.Build.0 = Release|Any CPU
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
