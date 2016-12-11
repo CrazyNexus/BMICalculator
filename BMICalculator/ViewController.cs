@@ -1,4 +1,5 @@
 ﻿using System;
+using BMICalculator.Shared;
 
 using UIKit;
 using Foundation;
@@ -30,7 +31,8 @@ namespace BMICalculator
          float height = float.Parse(heightTextField.Text);
          float weight = float.Parse(weightTextFiel.Text);
 
-         float bmi = (weight / (height * height));
+         BMICalc calc = new BMICalc(weight, height);
+         float bmi = calc.getBMI();
 
          bmiLabel.Text = bmi.ToString();
 

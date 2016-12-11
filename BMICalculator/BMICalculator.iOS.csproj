@@ -118,5 +118,11 @@
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BMICalculator.Shared\BMICalculator.Shared.csproj">
+      <Project>{9093FF1E-B24A-4302-83FA-6B17724217EF}</Project>
+      <Name>BMICalculator.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

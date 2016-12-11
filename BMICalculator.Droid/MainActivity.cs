@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using BMICalculator.Shared;
 
 namespace BMICalculator.Droid
 {
@@ -32,7 +33,8 @@ namespace BMICalculator.Droid
          float height = float.Parse(heightEditText.Text);
          float weight = float.Parse(weightEditText.Text);
 
-         float bmi = (weight / (height * height));
+         BMICalc calc = new BMICalc(weight, height);
+         float bmi = calc.getBMI();
 
          resultTextView.Text = bmi.ToString();
       }

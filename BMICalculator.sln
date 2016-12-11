@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICalculator.iOS", "BMICal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICalculator.Droid", "BMICalculator.Droid\BMICalculator.Droid.csproj", "{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICalculator.Shared", "BMICalculator.Shared\BMICalculator.Shared.csproj", "{9093FF1E-B24A-4302-83FA-6B17724217EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -29,5 +31,13 @@ Global
 		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{3AF5CBA8-57C6-46D5-95E5-A1F1581623BB}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Release|iPhone.Build.0 = Release|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{9093FF1E-B24A-4302-83FA-6B17724217EF}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
