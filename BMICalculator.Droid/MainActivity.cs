@@ -8,7 +8,7 @@ namespace BMICalculator.Droid
    [Activity(Label = "BMI Calculator", MainLauncher = true, Icon = "@mipmap/icon")]
    public class MainActivity : Activity
    {
-      Button calculateButton;
+      Button calculateButton, bmiDetailButton;
       TextView resultTextView;
       EditText heightEditText, weightEditText;
 
@@ -24,8 +24,10 @@ namespace BMICalculator.Droid
          resultTextView = FindViewById<TextView>(BMICalculator.Droid.Resource.Id.resultTextView);
          heightEditText = FindViewById<EditText>(BMICalculator.Droid.Resource.Id.heightEditText);
          weightEditText = FindViewById<EditText>(BMICalculator.Droid.Resource.Id.weigthEditText);
+         bmiDetailButton = FindViewById<Button>(Resource.Id.showDetailsButton);
 
          calculateButton.Click += CalculateButton_Click;
+         bmiDetailButton.Click += BmiDetailButton_Click;
       }
 
       void CalculateButton_Click(object sender, System.EventArgs e)
@@ -37,6 +39,11 @@ namespace BMICalculator.Droid
          float bmi = calc.getBMI();
 
          resultTextView.Text = bmi.ToString();
+      }
+
+      void BmiDetailButton_Click(object sender, System.EventArgs e)
+      {
+
       }
    }
 }
