@@ -31,7 +31,7 @@ namespace BMICalculator.Droid
 
       void EvaluateBMI(float bmi)
       {
-         string result = String.Empty;
+         string result = string.Empty;
 
          if (bmi <= 16)
             result = "sehr niedrig";

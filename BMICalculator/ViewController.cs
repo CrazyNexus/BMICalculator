@@ -8,6 +8,9 @@ namespace BMICalculator
 {
    public partial class ViewController : UIViewController
    {
+      float bmi = 0.0f;
+      BMICalc bmiCalc;
+
       protected ViewController(IntPtr handle) : base(handle)
       {
          // Note: this .ctor should not contain any initialization logic.
@@ -31,8 +34,8 @@ namespace BMICalculator
          float height = float.Parse(heightTextField.Text);
          float weight = float.Parse(weightTextFiel.Text);
 
-         BMICalc calc = new BMICalc(weight, height);
-         float bmi = calc.getBMI();
+         bmiCalc = new BMICalc(weight, height);
+         bmi = bmiCalc.getBMI();
 
          bmiLabel.Text = bmi.ToString();
 
@@ -45,6 +48,17 @@ namespace BMICalculator
          base.TouchesBegan(touches, evt);
 
          this.View.EndEditing(true);
+      }
+
+      public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+      {
+         base.PrepareForSegue(segue, sender);
+
+         if (segue.Identifier == "showDetail")
+         {
+            var controller = segue.DestinationViewController as DetailViewController;
+            controller.bmiCalc = bmiCalc;
+         }
       }
    }
 }
