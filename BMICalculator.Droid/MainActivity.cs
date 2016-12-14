@@ -2,6 +2,7 @@
 using Android.Widget;
 using Android.OS;
 using BMICalculator.Shared;
+using Android.Content;
 
 namespace BMICalculator.Droid
 {
@@ -11,6 +12,8 @@ namespace BMICalculator.Droid
       Button calculateButton, bmiDetailButton;
       TextView resultTextView;
       EditText heightEditText, weightEditText;
+
+      float bmi = 20.0f;
 
       protected override void OnCreate(Bundle savedInstanceState)
       {
@@ -36,14 +39,16 @@ namespace BMICalculator.Droid
          float weight = float.Parse(weightEditText.Text);
 
          BMICalc calc = new BMICalc(weight, height);
-         float bmi = calc.getBMI();
+         bmi = calc.getBMI();
 
          resultTextView.Text = bmi.ToString();
       }
 
       void BmiDetailButton_Click(object sender, System.EventArgs e)
       {
-
+         var intent = new Intent(this, typeof(BMIDetailsActivity));
+         intent.PutExtra("bmiValue", bmi);
+         StartActivity(intent);
       }
    }
 }
