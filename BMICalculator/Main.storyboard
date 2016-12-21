@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="25">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="25">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--BMI Rechner-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -19,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gewicht" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3">
@@ -40,7 +41,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bitte geben Sie Ihr Gewicht ein" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8" misplaced="YES">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bitte geben Sie Ihr Gewicht ein" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8">
                                 <rect key="frame" x="91" y="70" width="303" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -48,7 +49,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fSE-E0-H9N"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bitte geben Sie Ihre Größe ein" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="10" misplaced="YES">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bitte geben Sie Ihre Größe ein" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="10">
                                 <rect key="frame" x="91" y="120" width="303" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -56,13 +57,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="oHu-h2-wWF"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11">
                                 <rect key="frame" x="20" y="211" width="374" height="30"/>
                                 <state key="normal" title="Berechne BMI">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99,9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7" misplaced="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99,9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7">
                                 <rect key="frame" x="129" y="355" width="156" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="8kx-1j-RKJ"/>
@@ -72,11 +73,11 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTd-eZ-7NK" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTd-eZ-7NK">
                                 <rect key="frame" x="151" y="686" width="113" height="30"/>
                                 <state key="normal" title="Details anzeigen"/>
                                 <connections>
-                                    <segue id="261" destination="156" kind="show" identifier="showDetail"/>
+                                    <segue destination="156" kind="show" identifier="showDetail" id="261"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,10 +125,10 @@
                     <navigationItem key="navigationItem" title="BMI Rechner" id="145"/>
                     <connections>
                         <outlet property="bmiLabel" destination="7" id="name-outlet-7"/>
+                        <outlet property="btnDetails" destination="RTd-eZ-7NK" id="name-outlet-RTd-eZ-7NK"/>
                         <outlet property="calculateButton" destination="11" id="name-outlet-11"/>
                         <outlet property="heightTextField" destination="10" id="name-outlet-10"/>
                         <outlet property="weightTextFiel" destination="8" id="name-outlet-8"/>
-                        <outlet property="btnDetails" destination="RTd-eZ-7NK" id="name-outlet-RTd-eZ-7NK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,28 +149,32 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="87"/>
+            <point key="canvasLocation" x="-745" y="93"/>
         </scene>
+        <!--BMI Details-->
         <scene sceneID="155">
             <objects>
-                <viewController id="156" sceneMemberID="viewController" customClass="DetailViewController" title="BMI Details">
+                <viewController title="BMI Details" id="156" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="153"/>
                         <viewControllerLayoutGuide type="bottom" id="154"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="157">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="normal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="160" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="113" y="328" width="187" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinX="YES" flexibleMaxY="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40" weight="heavy"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="normal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="160">
+                                <rect key="frame" x="137.66666666666669" y="343.66666666666669" width="138.00000000000006" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="160" firstAttribute="centerY" secondItem="157" secondAttribute="centerY" id="211"/>
+                            <constraint firstItem="160" firstAttribute="centerX" secondItem="157" secondAttribute="centerX" id="212"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="160"/>
@@ -188,10 +193,6 @@
                                 <include reference="212"/>
                             </mask>
                         </variation>
-                        <constraints>
-                            <constraint id="211" firstItem="160" firstAttribute="centerY" secondItem="157" secondAttribute="centerY"/>
-                            <constraint id="212" firstItem="160" firstAttribute="centerX" secondItem="157" secondAttribute="centerX"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lbDetailText" destination="160" id="name-outlet-160"/>
@@ -199,13 +200,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="158" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410" y="83"/>
+            <point key="canvasLocation" x="609" y="77"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Default-568h.png" width="320" height="568"/>
-    </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina55"/>
-    </simulatedMetricsContainer>
 </document>
